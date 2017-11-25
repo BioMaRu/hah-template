@@ -14,6 +14,7 @@
   &.-is-sticky {
     @extend .u-rise-1;
     position: fixed;
+    z-index: 1;
     backface-visibility: hidden;
   }
 }

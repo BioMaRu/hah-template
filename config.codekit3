@@ -70,11 +70,18 @@
 		"oAP": "\/login.html",
 		"oF": 1
 		},
-	"\/page1.html": {
+	"\/patient-profile.html": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
-		"oAP": "\/page1.html",
+		"oAP": "\/patient-profile.html",
+		"oF": 0
+		},
+	"\/patient.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/patient.html",
 		"oF": 0
 		},
 	"\/styles\/atomic\/_align-content.scss": {
