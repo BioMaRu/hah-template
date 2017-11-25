@@ -9,6 +9,36 @@
 	],
 "creatorBuild": "26097",
 "files": {
+	"\/assets\/logo-round.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/assets\/logo-round.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/assets\/logo-symbol.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/assets\/logo-symbol.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/assets\/logo.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/assets\/logo.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
 	"\/component-bootstrap.js": {
 		"ft": 64,
 		"ma": 0,
@@ -39,6 +69,13 @@
 		"oA": 1,
 		"oAP": "\/login.html",
 		"oF": 1
+		},
+	"\/page1.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/page1.html",
+		"oF": 0
 		},
 	"\/styles\/atomic\/_align-content.scss": {
 		"aP": 0,
@@ -619,7 +656,7 @@
 		"oA": 0,
 		"oAP": "\/styles\/build-full.css",
 		"oF": 0,
-		"oS": 0,
+		"oS": 3,
 		"uL": 1
 		},
 	"\/styles\/components\/_bio-accordion.scss": {
@@ -726,6 +763,32 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"\/styles\/components\/_bio-navbar.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/styles\/components\/_bio-navbar.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/styles\/components\/_bio-panel.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/styles\/components\/_bio-panel.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"\/styles\/components\/_bio-progress.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -785,9 +848,9 @@
 		"dS": 0,
 		"ft": 4,
 		"ma": 0,
-		"oA": 0,
+		"oA": 1,
 		"oAP": "\/styles\/config.css",
-		"oF": 0,
+		"oF": 1,
 		"oS": 0,
 		"uL": 1
 		},
@@ -813,6 +876,19 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "\/styles\/layouts\/_lo-grid.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/styles\/layouts\/_lo-template.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/styles\/layouts\/_lo-template.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -876,9 +952,9 @@
 		"dS": 0,
 		"ft": 4,
 		"ma": 0,
-		"oA": 0,
+		"oA": 1,
 		"oAP": "\/styles\/reset.css",
-		"oF": 0,
+		"oF": 1,
 		"oS": 0,
 		"uL": 1
 		},

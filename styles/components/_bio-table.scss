@@ -1,18 +1,68 @@
-.bio-table {
+table.bio-table {
+  border: 1px solid #ccc;
   border-collapse: collapse;
-  border-spacing: 0;
+  margin: 0;
+  padding: 0;
   width: 100%;
-  max-width: 100%;
-  margin-bottom: 16px;
-  th {
-    padding: 16px;
-    border: 1px solid $color-dark;
-    border-color: $color-neutral-500;
+  table-layout: fixed;
+}
+
+table.bio-table tr {
+  background: #f8f8f8;
+  border: 1px solid #ddd;
+  padding: .35em;
+}
+
+table.bio-table th,
+table.bio-table td {
+  padding: .625em;
+  text-align: center;
+}
+
+table.bio-table th {
+  font-size: .85em;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+@include sm-lower {
+  table {
+    border: 0;
   }
-  td {
-    vertical-align: top;
-    padding: 16px;
-    border: 1px solid $color-dark;
-    border-color: $color-neutral-500;
+  table caption {
+    font-size: 1.3em;
+  }
+  table thead {
+    border: none;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+  table tr {
+    border-bottom: 3px solid #ddd;
+    display: block;
+    margin-bottom: .625em;
+  }
+  table td {
+    border-bottom: 1px solid #ddd;
+    display: block;
+    font-size: .8em;
+    text-align: right;
+  }
+  table td:before {
+    /*
+    * aria-label has no advantage, it won't be read inside a table
+    content: attr(aria-label);
+    */
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  table td:last-child {
+    border-bottom: 0;
   }
 }

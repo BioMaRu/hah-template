@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+  <link rel="stylesheet" href="styles/build-full.css">
+  <link rel="import" module-name="comp-navbar" href="components/comp-navbar.html">
+  <link rel="import" module-name="comp-button" href="components/comp-button.html">
+</head>
+<body>
+  <div class="lo-dashboard _bgcl-primary">
+    
+    <div class="bio-navbar -is-sticky">
+      <img src="assets/logo-symbol.svg" alt="logo" class="bio-navbar-logo" height="80%">
+    </div>
+    
+    <div class="lo-dashboard-content">
+      
+      <ul class="bio-breadcrumb _pdv-16px">
+        <li><a href="#">Patient</a></li>
+        <li>HAH20</li>
+      </ul>
+      
+      <div class="bio-panel">
+        <table class="bio-table">
+          <caption>Statement Summary</caption>
+          <thead>
+            <tr>
+              <th scope="col">Account</th>
+              <th scope="col">Due Date</th>
+              <th scope="col">Amount</th>
+              <th scope="col">Period</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td data-label="Account">Visa - 3412</td>
+              <td data-label="Due Date">04/01/2016</td>
+              <td data-label="Amount">$1,190</td>
+              <td data-label="Period">03/01/2016 - 03/31/2016</td>
+            </tr>
+            <tr>
+              <td scope="row" data-label="Account">Visa - 6076</td>
+              <td data-label="Due Date">03/01/2016</td>
+              <td data-label="Amount">$2,443</td>
+              <td data-label="Period">02/01/2016 - 02/29/2016</td>
+            </tr>
+            <tr>
+              <td scope="row" data-label="Account">Corporate AMEX</td>
+              <td data-label="Due Date">03/01/2016</td>
+              <td data-label="Amount">$1,181</td>
+              <td data-label="Period">02/01/2016 - 02/29/2016</td>
+            </tr>
+            <tr>
+              <td scope="row" data-label="Acount">Visa - 3412</td>
+              <td data-label="Due Date">02/01/2016</td>
+              <td data-label="Amount">$842</td>
+              <td data-label="Period">01/01/2016 - 01/31/2016</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="component-bootstrap.js"></script>
+</body>
+</html>
