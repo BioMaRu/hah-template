@@ -70,6 +70,13 @@
 		"oAP": "\/login.html",
 		"oF": 1
 		},
+	"\/patient-case-operation.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/patient-case-operation.html",
+		"oF": 0
+		},
 	"\/patient-profile.html": {
 		"cB": 0,
 		"ft": 8192,
@@ -831,6 +838,19 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "\/styles\/components\/_bio-tooltip.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/styles\/components\/_hah-components.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/styles\/components\/_hah-components.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1

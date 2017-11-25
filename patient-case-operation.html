@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Patient - Case Operation</title>
+  <link rel="stylesheet" href="styles/build-full.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  <div class="lo-dashboard _bgcl-primary">
+    
+    <div class="bio-navbar -is-sticky">
+      <img src="assets/logo-symbol.svg" alt="logo" class="bio-navbar-logo" height="80%">
+    </div>
+    
+    <div class="lo-dashboard-content">
+      
+      <ul class="bio-breadcrumb _pdv-24px">
+        <li><a href="#" class="bio-link -white -fancy">Patient</a></li>
+        <li>HAH 020</li>
+      </ul>
+
+      <!-- Tab -->
+      <div class="_dp-f">
+        <a href="patient-profile.html"><div class="_cs-pt _pd-16px _mgr-8px _bgcl-neutral-300 _bgcl-white-hover _bdtrrd-4px _bdtlrd-4px _cl-dark"><strong>Profile</strong></div></a>
+        <a href="#"><div class="_cs-pt _pd-16px _mgr-8px _bgcl-neutral-300 _bgcl-white-hover _bdtrrd-4px _bdtlrd-4px _cl-dark"><strong>Care Plan</strong></div></a>
+        <a href="#"><div class="_cs-pt _pd-16px _mgr-8px _bgcl-neutral-300 _bgcl-white-hover _bdtrrd-4px _bdtlrd-4px _cl-dark"><strong>Care Progress</strong></div></a>
+        <a href="patient-case-operation.html"><div class="_cs-pt _pd-16px _mgr-8px _bdtrrd-4px _bdtlrd-4px _bgcl-white _cl-dark"><strong>Case Operation</strong></div></a>
+      </div>
+      
+      <div class="bio-panel">
+        
+        <!-- Profile -->
+        <div class="hah-header _mgbt-16px">
+          <h3>Booking Detail</h3>
+          <div class="hah-header-detail">
+            <a class="bio-link -positive _mgl-16px" href="#">
+              <i class="fa fa-pencil-square _fs-3"></i>
+            </a>
+          </div>
+        </div>
+        <div class="_bgcl-neutral-200 _pd-16px _mgbt-64px">
+          <div class="lo-3-9-sm lo-6 -gapv-8px -gaph-16px">
+            <strong>ประเภทผู้ดูแล:</strong><div>-</div>
+            <strong>จ่ายผู้ดูแล:</strong><div>(10,000)</div>
+            <strong>ชื่อผู้ติดต่อ</strong><div>อติชาต ลัภโนปกรณ์</div>
+            <strong>เบอร์ผู้ติดต่อ:</strong><div>097-1249197</div>
+          </div>
+        </div>
+
+        <!-- Assessment Result -->
+        <div class="hah-header _mgbt-16px">
+          <h3>Caregivers</h3>
+          <div class="hah-header-detail">
+            <a class="bio-link -positive _mgl-16px" href="#">
+              <i class="fa fa-plus-square _fs-3"></i>
+            </a>
+            <a class="bio-link -info _mgl-16px" href="#">
+              <i class="fa fa-search _fs-3"></i>
+            </a>
+          </div>
+        </div>
+        <table class="bio-table _mgbt-64px">
+          <thead>
+            <tr>
+              <th scope="col">ID</th>
+              <th scope="col">Add to Booking</th>
+              <th scope="col">Name</th>
+              <th scope="col">Tel.</th>
+              <th scope="col">Type</th>
+              <th scope="col">Age</th>
+              <th scope="col">Address</th>
+              <th scope="col">Rating</th>
+              <th scope="col">Care Tool</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td data-label="ID">
+                <div class="bio-checkbox">
+                  <input type="checkbox" id="checkbox1">
+                  <label for="checkbox1">1</label>
+                </div>
+              </td>
+              <td data-label="Add to Booking">21/01/2017 05:10:00</td>
+              <td data-label="Name">สมศรี ดีใจจัง</td>
+              <td data-label="Tel.">0812345678</td>
+              <td data-label="Type">NA</td>
+              <td data-label="Age">50</td>
+              <td data-label="Address">1234/44 blab blalvb vbfdd 10987</td>
+              <td data-label="Rating">4.5</td>
+              <td data-label="Care Tool">
+                <div class="bio-checkbox -switch">
+                  <input id="sw1" type="checkbox">
+                  <label for="sw1"></label>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td data-label="ID">
+                <div class="bio-checkbox">
+                  <input type="checkbox" id="checkbox1">
+                  <label for="checkbox1">1</label>
+                </div>
+              </td>
+              <td data-label="Add to Booking">21/01/2017 05:10:00</td>
+              <td data-label="Name">สมศรี ดีใจจัง</td>
+              <td data-label="Tel.">0812345678</td>
+              <td data-label="Type">NA</td>
+              <td data-label="Age">50</td>
+              <td data-label="Address">1234/44 blab blalvb vbfdd 10987</td>
+              <td data-label="Rating">4.5</td>
+              <td data-label="Care Tool">
+                <div class="bio-checkbox -switch">
+                  <input id="sw1" type="checkbox">
+                  <label for="sw1"></label>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td data-label="ID">
+                <div class="bio-checkbox">
+                  <input type="checkbox" id="checkbox1">
+                  <label for="checkbox1">1</label>
+                </div>
+              </td>
+              <td data-label="Add to Booking">21/01/2017 05:10:00</td>
+              <td data-label="Name">สมศรี ดีใจจัง</td>
+              <td data-label="Tel.">0812345678</td>
+              <td data-label="Type">NA</td>
+              <td data-label="Age">50</td>
+              <td data-label="Address">1234/44 blab blalvb vbfdd 10987</td>
+              <td data-label="Rating">4.5</td>
+              <td data-label="Care Tool">
+                <div class="bio-checkbox -switch">
+                  <input id="sw1" type="checkbox">
+                  <label for="sw1"></label>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td data-label="ID">
+                <div class="bio-checkbox">
+                  <input type="checkbox" id="checkbox1">
+                  <label for="checkbox1">1</label>
+                </div>
+              </td>
+              <td data-label="Add to Booking">21/01/2017 05:10:00</td>
+              <td data-label="Name">สมศรี ดีใจจัง</td>
+              <td data-label="Tel.">0812345678</td>
+              <td data-label="Type">NA</td>
+              <td data-label="Age">50</td>
+              <td data-label="Address">1234/44 blab blalvb vbfdd 10987</td>
+              <td data-label="Rating">4.5</td>
+              <td data-label="Care Tool">
+                <div class="bio-checkbox -switch">
+                  <input id="sw1" type="checkbox">
+                  <label for="sw1"></label>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+        <!-- Medical Record -->
+        <div class="hah-header _mgbt-16px">
+          <h3>Admin Note</h3>
+        </div>
+        <div class="bio-textarea _mgbt-16px">
+          <textarea rows="5"></textarea>
+        </div>
+        <div class="_dp-f _jtfct-fe">
+          <div class="bio-button _mgbt-64px _w-128px">
+            Save
+          </div>
+        </div>
+        
+        <div class="hah-chat-bubble _dp-f _mgbt-32px">
+          <img class="_mgr-16px" src="http://www.newsshare.in/wp-content/uploads/2017/04/Miniclip-8-Ball-Pool-Avatar-16-180x180.png" width="64" height="64" alt="avatar">
+          <div class="_f-1">
+            <strong>BioMaRu</strong>
+            <p>
+              ปัญหาผู้สูงอายุติดบ้านติดเตียงปัจจุบันเป็นปัญหาใหญ่ทั่วโลกรวมทั้งประเทศไทย
+              ประเทศไทยให้ความสนใจการแก้ปัญหาผู้สูงอายุอย่างเป็นระบบมานานแล้ว
+              โดยมีแผนผู้สูงอายุแห่งชาติเป็นแผนระยะยาว 20 ปี
+            </p>
+            <small>
+              <span class="_opct-50">Dec 19, 2016 at 7:30PM</span>
+              <a class="bio-link -fancy _mgl-16px" href="#">Edit</a>
+              <a class="bio-link -fancy -negative _mgl-16px" href="#">Delete</a>
+            </small>
+          </div>
+        </div>
+        <div class="hah-chat-bubble _dp-f _mgbt-32px">
+          <img class="_mgr-16px" src="http://www.newsshare.in/wp-content/uploads/2017/04/Miniclip-8-Ball-Pool-Avatar-16-180x180.png" width="64" height="64" alt="avatar">
+          <div class="_f-1">
+            <strong>BioMaRu</strong>
+            <p>
+              ปัญหาผู้สูงอายุติดบ้านติดเตียงปัจจุบันเป็นปัญหาใหญ่ทั่วโลกรวมทั้งประเทศไทย
+              ประเทศไทยให้ความสนใจการแก้ปัญหาผู้สูงอายุอย่างเป็นระบบมานานแล้ว
+              โดยมีแผนผู้สูงอายุแห่งชาติเป็นแผนระยะยาว 20 ปี
+            </p>
+            <small>
+              <span class="_opct-50">Dec 19, 2016 at 7:30PM</span>
+              <a class="bio-link -fancy _mgl-16px" href="#">Edit</a>
+              <a class="bio-link -fancy -negative _mgl-16px" href="#">Delete</a>
+            </small>
+          </div>
+        </div>
+        <div class="hah-chat-bubble _dp-f _mgbt-32px">
+          <img class="_mgr-16px" src="http://www.newsshare.in/wp-content/uploads/2017/04/Miniclip-8-Ball-Pool-Avatar-16-180x180.png" width="64" height="64" alt="avatar">
+          <div class="_f-1">
+            <strong>BioMaRu</strong>
+            <p>
+              ปัญหาผู้สูงอายุติดบ้านติดเตียงปัจจุบันเป็นปัญหาใหญ่ทั่วโลกรวมทั้งประเทศไทย
+              ประเทศไทยให้ความสนใจการแก้ปัญหาผู้สูงอายุอย่างเป็นระบบมานานแล้ว
+              โดยมีแผนผู้สูงอายุแห่งชาติเป็นแผนระยะยาว 20 ปี
+            </p>
+            <small>
+              <span class="_opct-50">Dec 19, 2016 at 7:30PM</span>
+              <a class="bio-link -fancy _mgl-16px" href="#">Edit</a>
+              <a class="bio-link -fancy -negative _mgl-16px" href="#">Delete</a>
+            </small>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</body>
+</html>

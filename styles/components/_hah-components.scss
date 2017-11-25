@@ -1,0 +1,12 @@
+.hah-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  @extend ._cl-primary-500;
+  @extend ._bdcl-primary-500;
+  border-bottom: 3px solid;
+  >.hah-header-detail {
+    display: flex;
+    align-items: center;
+  }
+}
