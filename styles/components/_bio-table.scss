@@ -8,22 +8,35 @@ table.bio-table {
 }
 
 table.bio-table tr {
-  background: #f8f8f8;
   border: 1px solid #ddd;
-  padding: .35em;
+  cursor: pointer;
+}
+table.bio-table tbody tr:hover {
+  @extend ._bgcl-neutral-100;
 }
 
 table.bio-table th,
 table.bio-table td {
-  padding: .625em;
   text-align: center;
+  padding: 16px;
 }
 
-table.bio-table th {
-  font-size: .85em;
-  letter-spacing: .1em;
-  text-transform: uppercase;
+table.bio-table thead {
+  font-size: 1.1rem;
+  tr {
+    @extend ._bgcl-neutral-300;
+  }
 }
+
+table.bio-table tbody {
+  font-size: 1.1rem;
+  tr {
+    td {
+      word-break: break-all;
+    }
+  }
+}
+
 @include sm-lower {
   table {
     border: 0;
@@ -64,5 +77,26 @@ table.bio-table th {
   }
   table td:last-child {
     border-bottom: 0;
+  }
+}
+
+table.bio-table {
+  .status-disabled,
+  .status-positive,
+  .status-negative {
+    padding: 0;
+    font-size: 1.15em;
+    font-weight: 600;
+    color: white;
+  }
+  .status-disabled {
+    @extend ._cl-dark;
+    @extend ._bgcl-gray;
+  }
+  .status-positive {
+    @extend ._bgcl-positive;
+  }
+  .status-negative {
+    @extend ._bgcl-negative;
   }
 }
