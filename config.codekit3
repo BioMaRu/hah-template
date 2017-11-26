@@ -9,6 +9,13 @@
 	],
 "creatorBuild": "26097",
 "files": {
+	"\/.firebaserc": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/.firebaserc",
+		"oF": 0
+		},
 	"\/assets\/logo-round.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -39,6 +46,13 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
+	"\/booking.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/booking.html",
+		"oF": 0
+		},
 	"\/component-bootstrap.js": {
 		"ft": 64,
 		"ma": 0,
@@ -63,11 +77,19 @@
 		"oAP": "\/components\/comp-navbar.html",
 		"oF": 0
 		},
-	"\/login.html": {
+	"\/firebase.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "\/firebase-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"\/index.html": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 1,
-		"oAP": "\/login.html",
+		"oAP": "\/index.html",
 		"oF": 1
 		},
 	"\/patient-case-operation.html": {

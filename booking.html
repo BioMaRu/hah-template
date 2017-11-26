@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Patient</title>
+  <link rel="stylesheet" href="styles/build-full.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://vuejs.org/js/vue.js"></script>
+</head>
+<body>
+  <div class="lo-dashboard _bgcl-primary" id="app">
+    
+    <div class="bio-navbar -is-sticky">
+      <img src="assets/logo-symbol.svg" alt="logo" class="bio-navbar-logo" height="80%">
+    </div>
+    
+    <div class="lo-dashboard-content">
+      
+      <ul class="bio-breadcrumb _pdv-24px">
+        <li>Booking {{1 + 2}}</li>
+      </ul>
+      
+      <div class="bio-panel">
+        
+
+        <div class="_dp-f _jtfct-fe _mgbt-16px">
+          <div class="bio-button _w-128px">
+            <i class="fa fa-plus"></i> Booking
+          </div>
+        </div>
+
+        <div class="_dp-f _alit-ct _fw-w _bgcl-primary-100 _mgbt-16px _pd-12px">
+          <strong>Status:</strong>
+          <div class="bio-checkbox _mgh-16px _mgv-8px">
+            <input type="checkbox" id="checkbox1">
+            <label for="checkbox1">New</label>
+          </div>
+          <div class="bio-checkbox _mgh-16px _mgv-8px">
+            <input type="checkbox" id="checkbox2">
+            <label for="checkbox2">Pending</label>
+          </div>
+          <div class="bio-checkbox _mgh-16px _mgv-8px">
+            <input type="checkbox" id="checkbox3">
+            <label for="checkbox3">Matching</label>
+          </div>
+          <div class="bio-checkbox _mgh-16px _mgv-8px">
+            <input type="checkbox" id="checkbox4">
+            <label for="checkbox4">Response</label>
+          </div>
+          <div class="bio-checkbox _mgh-16px _mgv-8px">
+            <input type="checkbox" id="checkbox5">
+            <label for="checkbox5">Deal</label>
+          </div>
+          <div class="bio-checkbox _mgh-16px _mgv-8px">
+            <input type="checkbox" id="checkbox6">
+            <label for="checkbox6">Drop off</label>
+          </div>
+        </div>
+
+        <div class="_mgbt-16px">
+          <strong>Number:</strong> 16
+        </div>
+        <table class="bio-table">
+          <thead>
+            <tr>
+              <th scope="col" class="_w-64px">ID</th>
+              <th scope="col">Date Add</th>
+              <th scope="col">Patient</th>
+              <th scope="col">Contact</th>
+              <th scope="col">Tel.</th>
+              <th scope="col" class="_w-128px">Status</th>
+              <th scope="col" class="_w-128px">Admin</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr v-for="i in 8" @click.stop.prevent="selectRow">
+              <td data-label="ID">{{ i }}</td>
+              <td data-label="Date Add">12/10/2017, 21:05</td>
+              <td data-label="Patient">สลาตัน อิบราฮิมโมวิช</td>
+              <td data-label="Cotact">winsome losesome</td>
+              <td data-label="Tel.">0812345678</td>
+              <td data-label="Status" class="status-positive">Active</td>
+              <td data-label="Admin" @click.stop.prevent="openingDropdown = i">
+                <a class="hah-table-dropdown _cl-dark" href="#">
+                  <img
+                    src="http://www.newsshare.in/wp-content/uploads/2017/04/Miniclip-8-Ball-Pool-Avatar-16-180x180.png" alt="avatar"
+                    width="40" height="40"
+                    class="_ojf-cv"
+                  >
+                  <div>root</div>
+                  <div class="hah-table-dropdown-panel _pst-asl _bgcl-white _zid-1 _l-8px _r-8px u-rise-4 _bdw-2px _bdcl-primary">
+                    <ul>
+                      <li @click.stop.prevent="selectDropdownItem('Nink')" class="_cs-pt _pdh-8px _pdv-4px _bgcl-neutral-200-hover">Nink</li>
+                      <li @click.stop.prevent="selectDropdownItem('Win')" class="_cs-pt _pdh-8px _pdv-4px _bgcl-neutral-200-hover">Win</li>
+                      <li @click.stop.prevent="selectDropdownItem('Pui')" class="_cs-pt _pdh-8px _pdv-4px _bgcl-neutral-200-hover">Pui</li>
+                      <li @click.stop.prevent="selectDropdownItem('Tum')" class="_cs-pt _pdh-8px _pdv-4px _bgcl-neutral-200-hover">Tum</li>
+                      <li @click.stop.prevent="selectDropdownItem('O.J.')" class="_cs-pt _pdh-8px _pdv-4px _bgcl-neutral-200-hover">O.J.</li>
+                    </ul>
+                  </div>
+                </a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+    </div>
+  </div>
+  <script>
+    var vm = new Vue({
+      el: '#app',
+      data () {
+        return {
+          openingDropdown: null
+        }
+      },
+
+      methods: {
+        selectDropdownItem (select) {
+          alert(`Select: ${select}`)
+        },
+        selectRow () {
+          window.location.href = 'patient-profile.html'
+        }
+      }
+    })
+  </script>
+  <style>
+    .hah-table-dropdown-panel {
+      opacity: 0;
+      pointer-events: none;
+      transform: translateY(-3px);
+      transition: all 0.16s ease;
+      backface-visibility: hidden;
+    }
+    .hah-table-dropdown:focus > .hah-table-dropdown-panel {
+      opacity: 1;
+      transform: translateY(0px);
+      pointer-events: all;
+    }
+  </style>
+</body>
+</html>

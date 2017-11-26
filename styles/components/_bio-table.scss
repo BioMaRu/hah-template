@@ -19,6 +19,7 @@ table.bio-table th,
 table.bio-table td {
   text-align: center;
   padding: 16px;
+  position: relative;
 }
 
 table.bio-table thead {
@@ -70,6 +71,7 @@ table.bio-table tbody {
     text-align: left;
     padding-left: 50%;
   }
+
   table.bio-table td:before {
     content: attr(data-label);
     position: absolute;
@@ -81,6 +83,7 @@ table.bio-table tbody {
   table.bio-table td:last-child {
     border-bottom: 0;
   }
+
   table.bio-table tbody {
     .status-disabled,
     .status-positive,
@@ -89,10 +92,12 @@ table.bio-table tbody {
       padding-left: 50%;
     }
   }
+
 }
 
 table.bio-table {
   .status-disabled,
+  .status-primary,
   .status-positive,
   .status-negative {
     padding: 0;
@@ -100,14 +105,22 @@ table.bio-table {
     font-weight: 600;
     color: white;
   }
+
   .status-disabled {
     @extend ._cl-dark;
     @extend ._bgcl-gray;
   }
+
   .status-positive {
     @extend ._bgcl-positive;
   }
+
   .status-negative {
     @extend ._bgcl-negative;
   }
+
+  .status-primary {
+    @extend ._bgcl-primary;
+  }
+
 }
