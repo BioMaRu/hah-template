@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Patient</title>
+  <title>Booking</title>
   <link rel="stylesheet" href="styles/build-full.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="https://vuejs.org/js/vue.js"></script>
@@ -12,13 +12,77 @@
   <div class="lo-dashboard _bgcl-primary" id="app">
     
     <div class="bio-navbar -is-sticky">
-      <img src="assets/logo-symbol.svg" alt="logo" class="bio-navbar-logo" height="80%">
+
+      <!-- Left Menu -->
+      <div class="bio-navbar-left">
+        
+        <a href="#" class="bio-navbar-item hah-dropdown _dp-f _dp-n-sm">
+          <i class="fa fa-bars"></i>
+          <div class="hah-dropdown-panel _t-64px _l-8px" style="min-width: 150px">
+            <ul>
+              <li onclick="window.location.href = 'booking.html'">
+                  Bookings
+              </li>
+              <li onclick="window.location.href = 'patient.html'">
+                  Bookings
+              </li>
+              <li onclick="window.location.href = 'Caregiver.html'">
+                  Bookings
+              </li>
+            </ul>
+          </div>
+        </a>
+
+        <a class="bio-navbar-item _dp-n _dp-f-sm" href="booking.html">
+          <img src="assets/logo-symbol.svg" alt="logo" class="bio-navbar-logo" height="80%" width="auto">
+        </a>
+        <a class="bio-navbar-item bio-link _dp-n _dp-f-sm" href="booking.html">
+          <div>Bookings</div>
+        </a>
+        <a class="bio-navbar-item bio-link _dp-n _dp-f-sm" href="patient.html">
+          <div>Patients</div>
+        </a>
+        <a class="bio-navbar-item bio-link _dp-n _dp-f-sm" href="caregiver.html">
+          <div>Caregivers</div>
+        </a>
+      </div>
+
+      <!-- Center Menu -->
+      <div class="bio-navbar-center _dp-f _dp-n-sm">
+        <a class="bio-navbar-item" href="booking.html">
+          <img src="assets/logo-symbol.svg" alt="logo" class="bio-navbar-logo" height="80%" width="auto">
+        </a>
+      </div>
+
+      <!-- Right Menu -->
+      <div class="bio-navbar-right">
+        <!-- <a class="bio-navbar-item bio-link" href="/">
+          <div>Sign In</div>
+        </a> -->
+        <a class="bio-navbar-item hah-dropdown" href="#">
+          <img
+            class="_bdrd-max"
+            src="http://www.newsshare.in/wp-content/uploads/2017/04/Miniclip-8-Ball-Pool-Avatar-16-180x180.png"
+            alt="avatar"
+            width="50"
+            height="50"
+          >
+          <div class="hah-dropdown-panel _t-64px _r-8px" style="min-width: 150px">
+            <ul>
+              <li>Sign out</li>
+              <li>Sign out</li>
+              <li>Sign out</li>
+              <li>Sign out</li>
+            </ul>
+          </div>
+        </a>
+      </div>
     </div>
     
     <div class="lo-dashboard-content">
       
       <ul class="bio-breadcrumb _pdv-24px">
-        <li>Booking {{1 + 2}}</li>
+        <li>Booking</li>
       </ul>
       
       <div class="bio-panel">
@@ -74,28 +138,28 @@
             </tr>
           </thead>
           <tbody>
-            <tr v-for="i in 8" @click.stop.prevent="selectRow">
+            <tr v-for="i in 8" onclick="window.location.href = 'patient-profile.html'">
               <td data-label="ID">{{ i }}</td>
               <td data-label="Date Add">12/10/2017, 21:05</td>
               <td data-label="Patient">สลาตัน อิบราฮิมโมวิช</td>
               <td data-label="Cotact">winsome losesome</td>
               <td data-label="Tel.">0812345678</td>
               <td data-label="Status" class="status-positive">Active</td>
-              <td data-label="Admin" @click.stop.prevent="openingDropdown = i">
-                <a class="hah-table-dropdown _cl-dark" href="#">
+              <td data-label="Admin" onclick="event.stopPropagation()">
+                <a class="hah-dropdown" href="#">
                   <img
                     src="http://www.newsshare.in/wp-content/uploads/2017/04/Miniclip-8-Ball-Pool-Avatar-16-180x180.png" alt="avatar"
                     width="40" height="40"
                     class="_ojf-cv"
                   >
                   <div>root</div>
-                  <div class="hah-table-dropdown-panel _pst-asl _bgcl-white _zid-1 _l-8px _r-8px u-rise-4 _bdw-2px _bdcl-primary">
+                  <div class="hah-dropdown-panel _l-8px _r-8px">
                     <ul>
-                      <li @click.stop.prevent="selectDropdownItem('Nink')" class="_cs-pt _pdh-8px _pdv-4px _bgcl-neutral-200-hover">Nink</li>
-                      <li @click.stop.prevent="selectDropdownItem('Win')" class="_cs-pt _pdh-8px _pdv-4px _bgcl-neutral-200-hover">Win</li>
-                      <li @click.stop.prevent="selectDropdownItem('Pui')" class="_cs-pt _pdh-8px _pdv-4px _bgcl-neutral-200-hover">Pui</li>
-                      <li @click.stop.prevent="selectDropdownItem('Tum')" class="_cs-pt _pdh-8px _pdv-4px _bgcl-neutral-200-hover">Tum</li>
-                      <li @click.stop.prevent="selectDropdownItem('O.J.')" class="_cs-pt _pdh-8px _pdv-4px _bgcl-neutral-200-hover">O.J.</li>
+                      <li onclick="alert('Nink')">Nink</li>
+                      <li onclick="alert('Win')">Win</li>
+                      <li onclick="alert('Pui')">Pui</li>
+                      <li onclick="alert('Tum')">Tum</li>
+                      <li onclick="alert('O.J.')">O.J.</li>
                     </ul>
                   </div>
                 </a>
@@ -107,38 +171,13 @@
 
     </div>
   </div>
-  <script>
-    var vm = new Vue({
-      el: '#app',
-      data () {
-        return {
-          openingDropdown: null
-        }
-      },
 
-      methods: {
-        selectDropdownItem (select) {
-          alert(`Select: ${select}`)
-        },
-        selectRow () {
-          window.location.href = 'patient-profile.html'
-        }
-      }
+  <script>
+    // for mockup list render only
+    var vm = new Vue({
+      el: '#app'
     })
+
   </script>
-  <style>
-    .hah-table-dropdown-panel {
-      opacity: 0;
-      pointer-events: none;
-      transform: translateY(-3px);
-      transition: all 0.16s ease;
-      backface-visibility: hidden;
-    }
-    .hah-table-dropdown:focus > .hah-table-dropdown-panel {
-      opacity: 1;
-      transform: translateY(0px);
-      pointer-events: all;
-    }
-  </style>
 </body>
 </html>

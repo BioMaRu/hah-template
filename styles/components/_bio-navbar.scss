@@ -7,10 +7,30 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  >.bio-navbar-logo {
-
+  padding: 0 10px;
+  position: relative;
+  >.bio-navbar-left,
+  >.bio-navbar-right {
+    display: flex;
+    align-items: center;
+    height: 100%;
   }
-
+  >.bio-navbar-center {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    height: 100%;
+  }
+  .bio-navbar-item {
+    @extend ._bgcl-neutral-200-hover;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding: 0 16px;
+  }
   &.-is-sticky {
     @extend .u-rise-1;
     position: fixed;

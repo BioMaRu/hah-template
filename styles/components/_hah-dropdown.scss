@@ -1,0 +1,37 @@
+.hah-dropdown {
+  @extend ._cl-dark;
+}
+
+.hah-dropdown-panel {
+  @extend .u-rise-4;
+  @extend ._bdcl-primary;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(-3px);
+  transition: all 0.16s ease;
+  backface-visibility: hidden;
+  position: absolute;
+  background-color: white;
+  z-index: 1;
+  border: 2px solid;
+  li {
+    @extend ._bgcl-neutral-200-hover;
+    cursor: pointer;
+    padding: 8px 8px;
+  }
+  a {
+    @extend ._cl-dark;
+  }
+}
+
+.hah-dropdown:focus > .hah-dropdown-panel {
+  opacity: 1;
+  transform: translateY(0px);
+  pointer-events: all;
+}
+
+.hah-dropdown:focus + .hah-dropdown-panel {
+  opacity: 1;
+  transform: translateY(0px);
+  pointer-events: all;
+}
