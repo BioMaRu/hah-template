@@ -32,6 +32,7 @@ input[type="checkbox"] {
     opacity: 0;
     cursor: pointer;
     pointer-events: none;
+    position: absolute;
     &:checked {
       + label::after {
         content: "";
@@ -86,6 +87,7 @@ input[type="checkbox"] {
     opacity: 0;
     cursor: pointer;
     pointer-events: none;
+    position: absolute;
     &:checked {
       + label::after {
         content: "";

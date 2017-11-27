@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Booking - Edit</title>
+  <link rel="stylesheet" href="styles/build-full.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://vuejs.org/js/vue.js"></script>
+</head>
+<body>
+  <div class="lo-dashboard _bgcl-primary" id="app">
+    
+    <div class="bio-navbar -is-sticky">
+
+      <!-- Left Menu -->
+      <div class="bio-navbar-left">
+        
+        <a href="#" class="bio-navbar-item hah-dropdown _dp-f _dp-n-sm">
+          <i class="fa fa-bars"></i>
+          <div class="hah-dropdown-panel _t-64px _l-8px" style="min-width: 150px">
+            <ul>
+              <li onclick="window.location.href = 'booking.html'">
+                Bookings
+              </li>
+              <li onclick="window.location.href = 'patient.html'">
+                Patients
+              </li>
+              <li onclick="window.location.href = 'Caregiver.html'">
+                Caregivers
+              </li>
+            </ul>
+          </div>
+        </a>
+
+        <a class="bio-navbar-item _dp-n _dp-f-sm" href="booking.html">
+          <img src="assets/logo-symbol.svg" alt="logo" class="bio-navbar-logo" height="80%" width="auto">
+        </a>
+        <a class="bio-navbar-item bio-link _dp-n _dp-f-sm" href="booking.html">
+          <div>Bookings</div>
+        </a>
+        <a class="bio-navbar-item bio-link _dp-n _dp-f-sm" href="patient.html">
+          <div>Patients</div>
+        </a>
+        <a class="bio-navbar-item bio-link _dp-n _dp-f-sm" href="caregiver.html">
+          <div>Caregivers</div>
+        </a>
+      </div>
+
+      <!-- Center Menu -->
+      <div class="bio-navbar-center _dp-f _dp-n-sm">
+        <a class="bio-navbar-item" href="booking.html">
+          <img src="assets/logo-symbol.svg" alt="logo" class="bio-navbar-logo" height="80%" width="auto">
+        </a>
+      </div>
+
+      <!-- Right Menu -->
+      <div class="bio-navbar-right">
+        <!-- <a class="bio-navbar-item bio-link" href="/">
+          <div>Sign In</div>
+        </a> -->
+        <a class="bio-navbar-item hah-dropdown" href="#">
+          <img
+            class="_bdrd-max"
+            src="http://www.newsshare.in/wp-content/uploads/2017/04/Miniclip-8-Ball-Pool-Avatar-16-180x180.png"
+            alt="avatar"
+            width="50"
+            height="50"
+          >
+          <div class="hah-dropdown-panel _t-64px _r-8px" style="min-width: 150px">
+            <ul>
+              <li>Sign out</li>
+              <li>Sign out</li>
+              <li>Sign out</li>
+              <li>Sign out</li>
+            </ul>
+          </div>
+        </a>
+      </div>
+    </div>
+    
+    <div class="lo-dashboard-content">
+      
+      <ul class="bio-breadcrumb _pdv-24px">
+        <li><a href="booking.html" class="bio-link -white -fancy">Booking</a></li>
+        <li><a href="booking-detail.html" class="bio-link -white -fancy">Detail</a></li>
+        <li>Edit</li>
+      </ul>
+      
+      <div class="bio-panel">
+
+        <div class="bio-message -info _mgbt-16px">
+          <p>
+            <strong>Drop Interest:</strong> xxx Xxxxxxx Xxxxxxx XxxxxxxXxxxxxxXxxxxxxXxxxxxx
+            Xxxxxxx Xxxxxxx Xxxxxxx Xxxxxxx Xxxxxxx Xxxxxxx Xxxxxxx Xxxxxxx Xxxxxxx
+          </p>
+        </div>
+
+        <div class="hah-header _mgbt-32px">
+          <h3>ข้อมูลผู้ติดต่อ</h3>
+        </div>
+
+        <div class="_dp-f _alit-fst _mgbt-32px">
+          <div class="_w-128px _tal-r _mgr-16px">
+            <strong>ชื่อผู้ติดต่อ</strong><sup class="_cl-negative">*</sup>
+          </div>
+          <div class="bio-field _f-1 _mxw-256px">
+            <div class="bio-input">
+              <input type="text">
+            </div>
+          </div>
+        </div>
+
+        <div class="_dp-f _alit-fst _mgbt-32px">
+          <div class="_w-128px _tal-r _mgr-16px">
+            <strong>หมายเลขโทรศัพท์</strong><sup class="_cl-negative">*</sup>
+          </div>
+          <div class="bio-field _f-1 _mxw-256px">
+            <div class="bio-input">
+              <input type="text">
+            </div>
+          </div>
+        </div>
+
+        <div class="_dp-f _alit-fst _mgbt-64px">
+          <div class="_w-128px _tal-r _mgr-16px">
+            <strong>อีเมล</strong>
+          </div>
+          <div class="bio-field _f-1 _mxw-256px">
+            <div class="bio-input">
+              <input type="text">
+            </div>
+          </div>
+        </div>
+
+        <div class="hah-header _mgbt-32px">
+          <h3>ข้อมูลคนไข้</h3>
+        </div>
+        
+        <div class="_dp-f _alit-fst _mgbt-32px">
+          <div class="_w-128px _tal-r _mgr-16px">
+            <strong>อายุ</strong><sup class="_cl-negative">*</sup>
+          </div>
+          <div class="bio-field _f-1 _mxw-256px">
+            <div class="bio-input">
+              <input type="text">
+            </div>
+          </div>
+        </div>
+
+        <div class="_dp-f _alit-fst _mgbt-32px">
+          <div class="_w-128px _tal-r _mgr-16px">
+            <strong>เพศ</strong><sup class="_cl-negative">*</sup>
+          </div>
+          <div class="bio-field _f-1 _mxw-256px _dp-f _fdrt-cl _fw-w">
+            <div class="bio-radio _mgr-16px _mgbt-8px">
+              <input type="radio" id="gender1" name="gender">
+              <label class="_mgl-0px" for="gender1">ชาย</label>
+            </div>
+            <div class="bio-radio">
+              <input type="radio" id="gender2" name="gender">
+              <label class="_mgl-0px" for="gender2">หญิง</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="_dp-f _alit-fst _mgbt-32px">
+          <div class="_w-128px _tal-r _mgr-16px">
+            <strong>จังหวัด</strong><sup class="_cl-negative">*</sup>
+          </div>
+          <div class="bio-field _f-1 _mxw-256px">
+            <div class="bio-select">
+              <select>
+                <option disabled>Select dropdown</option>
+                <option>Option 1</option>
+                <option>Option 2</option>
+                <option>Option 3</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        
+        <div class="_dp-f _alit-fst _mgbt-32px">
+          <div class="_w-128px _tal-r _mgr-16px">
+            <strong>อำเภอ/เขต</strong><sup class="_cl-negative">*</sup>
+          </div>
+          <div class="bio-field _f-1 _mxw-256px">
+            <div class="bio-select">
+              <select>
+                <option disabled>Select dropdown</option>
+                <option>Option 1</option>
+                <option>Option 2</option>
+                <option>Option 3</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        
+        <div class="_dp-f _alit-fst _mgbt-32px">
+          <div class="_w-128px _tal-r _mgr-16px">
+            <strong>ประเภทผู้ป่วย</strong><sup class="_cl-negative">*</sup>
+          </div>
+          <div class="bio-field _f-1 _mxw-512px _dp-f _fdrt-cl _fw-w">
+            <div class="bio-radio _mgbt-8px">
+              <input type="radio" id="ptype1" name="ptype">
+              <label class="_mgl-0px" for="ptype1">1. ผู้ป่วยช่วยเหลือตัวเองได้ ต้องการคนอยู่เป็นเพื่อน, ดูแลกิจวัตรประจำวันทั่วไป</label>
+            </div>
+            <div class="bio-radio _mgbt-8px">
+              <input type="radio" id="ptype2" name="ptype">
+              <label class="_mgl-0px" for="ptype2">2. ผู้ป่วยช่วยเหลือตัวเองได้บ้าง ต้องการคนดูแลกิจวัตรประจำวันทั่วไปอย่างใกล้ชิด เช่นประคองเมื่ออาบน้ำ,​ ทำกายภาพเบื้องต้น, ประคองเวลาเดิน</label>
+            </div>
+            <div class="bio-radio _mgbt-8px">
+              <input type="radio" id="ptype3" name="ptype">
+              <label class="_mgl-0px" for="ptype3">3. ผู้ป่วยติดเตียง ต้องการคนดูแลกิจวัตรประจำวันทั่วไป เช่นอาบน้ำบนเตียง, เคลื่อนย้ายผู้ป่วยจากเตียง, พลิกตัว</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="_dp-f _alit-fst _mgbt-32px">
+          <div class="_w-128px _tal-r _mgr-16px">
+            <strong>เฝ้าระวังใกล้ชิด</strong>
+          </div>
+          <div class="bio-field _f-1 _mxw-512px _dp-f _fdrt-cl _fw-w">
+            <div class="bio-radio _mgbt-8px">
+              <input type="radio" id="ptype21" name="ptype2">
+              <label class="_mgl-0px" for="ptype21">ใช่</label>
+            </div>
+            <div class="bio-radio _mgbt-8px">
+              <input type="radio" id="ptype22" name="ptype2">
+              <label class="_mgl-0px" for="ptype22">ไม่ใช่</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="_dp-f _alit-fst _mgbt-32px">
+          <div class="_w-128px _tal-r _mgr-16px">
+            <strong>โรค</strong>
+          </div>
+          <div class="bio-field _f-1 _mxw-256px">
+            <div class="bio-textarea">
+              <textarea rows="5"></textarea>
+            </div>
+          </div>
+        </div>
+
+        <div class="_dp-f _alit-fst _mgbt-32px">
+          <div class="_w-128px _tal-r _mgr-16px">
+            <strong>กิจกรรมที่อาศัยทักษะ</strong>
+          </div>
+          <div class="_f-1 _mxw-512px _dp-f _fdrt-cl _fw-w">
+            <div class="bio-checkbox _mgbt-8px">
+              <input type="checkbox" id="act1">
+              <label class="_mgl-0px" for="act1">วัดสัญญาณชีพ</label>
+            </div>
+            <div class="bio-checkbox _mgbt-8px">
+              <input type="checkbox" id="act2">
+              <label class="_mgl-0px" for="act2">วัดสัญญาณชีพ</label>
+            </div>
+            <div class="bio-checkbox _mgbt-8px">
+              <input type="checkbox" id="act3">
+              <label class="_mgl-0px" for="act3">วัดสัญญาณชีพ</label>
+            </div>
+            <div class="bio-checkbox _mgbt-8px">
+              <input type="checkbox" id="act4">
+              <label class="_mgl-0px" for="act4">วัดสัญญาณชีพ</label>
+            </div>
+            <div class="bio-checkbox _mgbt-8px">
+              <input type="checkbox" id="act5">
+              <label class="_mgl-0px" for="act5">วัดสัญญาณชีพ</label>
+            </div>
+            <div class="bio-checkbox _mgbt-8px">
+              <input type="checkbox" id="act6">
+              <label class="_mgl-0px" for="act6">วัดสัญญาณชีพ</label>
+            </div>
+            <div class="bio-checkbox _mgbt-8px">
+              <input type="checkbox" id="act7">
+              <label class="_mgl-0px" for="act7">วัดสัญญาณชีพ</label>
+            </div>
+          </div>
+        </div>
+        
+        <div class="_dp-f _alit-fst _mgbt-32px">
+          <div class="_w-128px _tal-r _mgr-16px">
+            <strong>กิจกรรมทั่วไป</strong>
+          </div>
+          <div class="_f-1 _mxw-512px _dp-f _fdrt-cl _fw-w">
+            <div class="bio-checkbox _mgbt-8px">
+              <input type="checkbox" id="act21">
+              <label class="_mgl-0px" for="act21">ทำอาหารให้ผู้ป่วย</label>
+            </div>
+            <div class="bio-field _f-1 _mgbt-16px">
+              <div class="_mgbt-4px">ประเภทอาหาร</div>
+              <div class="bio-input">
+                <input type="text">
+              </div>
+            </div>
+            <div class="bio-checkbox _mgbt-8px">
+              <input type="checkbox" id="act22">
+              <label class="_mgl-0px" for="act22">ช่วยอาบน้ำและการขับถ่าย</label>
+            </div>
+            <div class="bio-checkbox _mgbt-8px">
+              <input type="checkbox" id="act23">
+              <label class="_mgl-0px" for="act23">ซักรีดเสื้อผ้าผู้ป่วย</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="_dp-f _alit-fst _mgbt-32px">
+          <div class="_w-128px _tal-r _mgr-16px">
+            <strong>สิ่งแวดล้อมที่บ้านคนไข้</strong>
+          </div>
+          <div class="_f-1 _mxw-512px _dp-f _fdrt-cl _fw-w">
+            <div class="bio-checkbox _mgbt-8px">
+              <input type="checkbox" id="act22">
+              <label class="_mgl-0px" for="act22">มีแม่บ้าน</label>
+            </div>
+            <div class="bio-checkbox _mgbt-8px">
+              <input type="checkbox" id="act21">
+              <label class="_mgl-0px" for="act21">มีสัตว์เลี้ยง</label>
+            </div>
+            <div class="bio-field -negative _f-1 _mgbt-16px">
+              <div class="bio-input">
+                <input type="text">
+              </div>
+              <small>test test test test </small>
+            </div>
+          </div>
+        </div>
+        
+        <div class="hah-header _mgbt-32px">
+          <h3>รายละเอียดงาน</h3>
+        </div>
+        
+        <div class="_dp-f _alit-fst _mgbt-32px">
+          <div class="_w-128px _tal-r _mgr-16px">
+            <strong>ประเภทผู้ดูแล</strong>
+          </div>
+          <div class="_f-1 _mxw-512px _dp-f _fdrt-cl _fw-w">
+            <div class="bio-checkbox _mgbt-8px">
+              <input type="checkbox" id="act22">
+              <label class="_mgl-0px" for="act22">ผู้ดูแลทั่วไป (CG)</label>
+            </div>
+            <div class="bio-checkbox _mgbt-8px">
+              <input type="checkbox" id="act21">
+              <label class="_mgl-0px" for="act21">ผู้ดูแลทั่วไป (CG)</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="_dp-f _alit-fst _mgbt-32px">
+          <div class="_w-128px _tal-r _mgr-16px">
+            <strong>ประเภทงาน</strong>
+          </div>
+          <div class="_f-1 _mxw-512px _dp-f _fdrt-cl _fw-w">
+            <div class="bio-checkbox _mgbt-8px">
+              <input type="checkbox" id="act22">
+              <label class="_mgl-0px" for="act22">อาศัยอยู่กับคนไข้ (24 ชม.)</label>
+            </div>
+            <div class="bio-checkbox _mgbt-8px">
+              <input type="checkbox" id="act21">
+              <label class="_mgl-0px" for="act21">เดินทางไปกลับ (12 ชม.)</label>
+            </div>
+            <div class="_pdl-24px">
+              <div class="bio-checkbox _mgbt-8px">
+                <input type="checkbox" id="act21">
+                <label class="_mgl-0px" for="act21">เวรกลางวัน</label>
+              </div>
+              <div class="bio-checkbox _mgbt-8px">
+                <input type="checkbox" id="act21">
+                <label class="_mgl-0px" for="act21">เวรกลางคืน</label>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="_dp-f _fw-w _jtfct-ct">
+          <div class="bio-button -gray _w-128px _mgh-12px _mgbt-8px">
+            Drop Off
+          </div>
+          <div class="bio-button _w-128px _mgh-12px _mgbt-8px">
+            Create
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</body>
+</html>

@@ -3,15 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Patient - Case Operation</title>
+  <title>Booking - Detail</title>
   <link rel="stylesheet" href="styles/build-full.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-  <div class="lo-dashboard _bgcl-primary">
+  <div class="lo-dashboard _bgcl-primary" id="app">
     
     <div class="bio-navbar -is-sticky">
-        
+
       <!-- Left Menu -->
       <div class="bio-navbar-left">
         
@@ -81,155 +81,148 @@
     <div class="lo-dashboard-content">
       
       <ul class="bio-breadcrumb _pdv-24px">
-        <li><a href="#" class="bio-link -white -fancy">Patient</a></li>
-        <li>HAH 020</li>
+        <li><a href="booking.html" class="bio-link -white -fancy">Booking</a></li>
+        <li>Detail</li>
       </ul>
-
-      <!-- Tab -->
-      <div class="_dp-f">
-        <a href="patient-profile.html"><div class="_cs-pt _pd-16px _mgr-8px _bgcl-neutral-300 _bgcl-white-hover _bdtrrd-4px _bdtlrd-4px _cl-dark"><strong>Profile</strong></div></a>
-        <a href="#"><div class="_cs-pt _pd-16px _mgr-8px _bgcl-neutral-300 _bgcl-white-hover _bdtrrd-4px _bdtlrd-4px _cl-dark"><strong>Care Plan</strong></div></a>
-        <a href="#"><div class="_cs-pt _pd-16px _mgr-8px _bgcl-neutral-300 _bgcl-white-hover _bdtrrd-4px _bdtlrd-4px _cl-dark"><strong>Care Progress</strong></div></a>
-        <a href="patient-case-operation.html"><div class="_cs-pt _pd-16px _mgr-8px _bdtrrd-4px _bdtlrd-4px _bgcl-white _cl-dark"><strong>Case Operation</strong></div></a>
-      </div>
       
       <div class="bio-panel">
         
-        <!-- Profile -->
-        <div class="hah-header _mgbt-16px">
-          <h3>Booking Detail</h3>
-          <div class="hah-header-detail">
-            <a class="bio-link -positive _mgl-16px" href="#">
-              <i class="fa fa-pencil-square _fs-3"></i>
-            </a>
+        <div class="_dp-f _fw-w _jtfct-fe _alit-ct _mgbt-16px">
+          <a class="bio-link -positive _mgr-16px" href="booking-edit.html">
+            <i class="fa fa-pencil-square _fs-1"></i>
+          </a>
+          <div class="bio-button -gray _w-128px _mgr-16px">
+            Drop-off
           </div>
-        </div>
-        <div class="_bgcl-neutral-200 _pd-16px _mgbt-64px">
-          <div class="lo-3-9-sm lo-6 -gapv-8px -gaph-16px">
-            <strong>ประเภทผู้ดูแล:</strong><div>-</div>
-            <strong>จ่ายผู้ดูแล:</strong><div>(10,000)</div>
-            <strong>ชื่อผู้ติดต่อ</strong><div>อติชาต ลัภโนปกรณ์</div>
-            <strong>เบอร์ผู้ติดต่อ:</strong><div>097-1249197</div>
+          <div class="bio-button _w-128px">
+            Find CG
           </div>
         </div>
 
-        <!-- Assessment Result -->
-        <div class="hah-header _mgbt-16px">
-          <h3>Caregivers</h3>
-          <div class="hah-header-detail">
-            <a class="bio-link -positive _mgl-16px" href="#">
-              <i class="fa fa-plus-square _fs-3"></i>
-            </a>
-            <a class="bio-link -info _mgl-16px" href="#">
-              <i class="fa fa-search _fs-3"></i>
-            </a>
+        <div class="_dp-f _alit-ct _fw-w _bgcl-primary-100 _mgbt-16px _pd-12px">
+          <div class="bio-checkbox _mgh-16px _mgv-8px">
+            <div><strong>Booking ID:</strong></div>
+            <div>123</div>
+          </div>
+          <div class="bio-checkbox _mgh-16px _mgv-8px">
+            <div><strong>วันที่เปิด Booking:</strong></div>
+            <div>23/11/2017 20:21:53</div>
+          </div>
+          <div class="bio-checkbox _mgh-16px _mgv-8px">
+            <div><strong>ชื่อผู้ติดต่อ</strong></div>
+            <div>สมศรี สรีสมาน</div>
+          </div>
+          <div class="bio-checkbox _mgh-16px _mgv-8px">
+            <div><strong>เบอร์</strong></div>
+            <div>0812345678</div>
+          </div>
+          <div class="bio-checkbox _mgh-16px _mgv-8px">
+            <div><strong>อีเมล</strong></div>
+            <div>oj.napas@gmail.com</div>
+          </div>
+          <div class="bio-checkbox _mgh-16px _mgv-8px">
+            <div><strong>สถานที่</strong></div>
+            <div>เมืองทอง</div>
           </div>
         </div>
+
+        <div class="hah-header _mgbt-16px">
+          <h3>การดูแล</h3>
+        </div>
+
         <table class="bio-table _mgbt-64px">
           <thead>
             <tr>
-              <th scope="col">ID</th>
-              <th scope="col">Add to Booking</th>
-              <th scope="col">Name</th>
-              <th scope="col">Tel.</th>
-              <th scope="col">Type</th>
-              <th scope="col">Age</th>
-              <th scope="col">Address</th>
-              <th scope="col">Rating</th>
-              <th scope="col">Care Tool</th>
+              <th scope="col" class="_w-256px">หัวข้อ</th>
+              <th scope="col">รายละเอียด</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td data-label="ID">
-                <div class="bio-checkbox">
-                  <input type="checkbox" id="checkbox1">
-                  <label for="checkbox1">1</label>
-                </div>
-              </td>
-              <td data-label="Add to Booking">21/01/2017 05:10:00</td>
-              <td data-label="Name">สมศรี ดีใจจัง</td>
-              <td data-label="Tel.">0812345678</td>
-              <td data-label="Type">NA</td>
-              <td data-label="Age">50</td>
-              <td data-label="Address">1234/44 blab blalvb vbfdd 10987</td>
-              <td data-label="Rating">4.5</td>
-              <td data-label="Care Tool">
-                <div class="bio-checkbox -switch">
-                  <input id="sw1" type="checkbox">
-                  <label for="sw1"></label>
-                </div>
-              </td>
+              <td data-label="หัวข้อ" class="_tal-l">อายุคนไข้</td>
+              <td data-label="รายละเอียด" class="_tal-l">1</td>
             </tr>
             <tr>
-              <td data-label="ID">
-                <div class="bio-checkbox">
-                  <input type="checkbox" id="checkbox2">
-                  <label for="checkbox2">2</label>
-                </div>
-              </td>
-              <td data-label="Add to Booking">21/01/2017 05:10:00</td>
-              <td data-label="Name">สมศรี ดีใจจัง</td>
-              <td data-label="Tel.">0812345678</td>
-              <td data-label="Type">NA</td>
-              <td data-label="Age">50</td>
-              <td data-label="Address">1234/44 blab blalvb vbfdd 10987</td>
-              <td data-label="Rating">4.5</td>
-              <td data-label="Care Tool">
-                <div class="bio-checkbox -switch">
-                  <input id="sw1" type="checkbox">
-                  <label for="sw1"></label>
-                </div>
-              </td>
+              <td data-label="หัวข้อ" class="_tal-l">เพศ</td>
+              <td data-label="รายละเอียด" class="_tal-l">หญิง</td>
             </tr>
             <tr>
-              <td data-label="ID">
-                <div class="bio-checkbox">
-                  <input type="checkbox" id="checkbox3">
-                  <label for="checkbox3">3</label>
-                </div>
-              </td>
-              <td data-label="Add to Booking">21/01/2017 05:10:00</td>
-              <td data-label="Name">สมศรี ดีใจจัง</td>
-              <td data-label="Tel.">0812345678</td>
-              <td data-label="Type">NA</td>
-              <td data-label="Age">50</td>
-              <td data-label="Address">1234/44 blab blalvb vbfdd 10987</td>
-              <td data-label="Rating">4.5</td>
-              <td data-label="Care Tool">
-                <div class="bio-checkbox -switch">
-                  <input id="sw1" type="checkbox">
-                  <label for="sw1"></label>
-                </div>
-              </td>
+              <td data-label="หัวข้อ" class="_tal-l">น้ำหนัก,​ ส่วนสูง</td>
+              <td data-label="รายละเอียด" class="_tal-l">22 kg. 22 cm.</td>
             </tr>
             <tr>
-              <td data-label="ID">
-                <div class="bio-checkbox">
-                  <input type="checkbox" id="checkbox4">
-                  <label for="checkbox4">4</label>
-                </div>
-              </td>
-              <td data-label="Add to Booking">21/01/2017 05:10:00</td>
-              <td data-label="Name">สมศรี ดีใจจัง</td>
-              <td data-label="Tel.">0812345678</td>
-              <td data-label="Type">NA</td>
-              <td data-label="Age">50</td>
-              <td data-label="Address">1234/44 blab blalvb vbfdd 10987</td>
-              <td data-label="Rating">4.5</td>
-              <td data-label="Care Tool">
-                <div class="bio-checkbox -switch">
-                  <input id="sw1" type="checkbox">
-                  <label for="sw1"></label>
-                </div>
-              </td>
+              <td data-label="หัวข้อ" class="_tal-l">โรงพยาบาลประจำ</td>
+              <td data-label="รายละเอียด" class="_tal-l">-</td>
+            </tr>
+            <tr>
+              <td data-label="หัวข้อ" class="_tal-l">โรค</td>
+              <td data-label="รายละเอียด" class="_tal-l">-</td>
+            </tr>
+            <tr>
+              <td data-label="หัวข้อ" class="_tal-l">ประเภทผู้ป่วย</td>
+              <td data-label="รายละเอียด" class="_tal-l">1. ผู้ป่วยช่วยเหลือตัวเองได้ ต้องการคนอยู่เป็นเพื่อน, ดูแลกิจวัตรประจำวันทั่วไป</td>
             </tr>
           </tbody>
         </table>
 
+        <div class="hah-header _mgbt-16px">
+          <h3>ประเภทงาน</h3>
+        </div>
+
+        <table class="bio-table _mgbt-64px">
+          <thead>
+            <tr>
+              <th scope="col" class="_w-256px">หัวข้อ</th>
+              <th scope="col">รายละเอียด</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td data-label="หัวข้อ" class="_tal-l">กิจกรรมที่อาศัยทักษะ</td>
+              <td data-label="รายละเอียด" class="_tal-l">
+                <ul>
+                  <li>- วัดสัญญาณชีพ</li>
+                  <li>- เคลื่อนย้ายคนไข้</li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <td data-label="หัวข้อ" class="_tal-l">เพศ</td>
+              <td data-label="รายละเอียด" class="_tal-l">หญิง</td>
+            </tr>
+            <tr>
+              <td data-label="หัวข้อ" class="_tal-l">น้ำหนัก,​ ส่วนสูง</td>
+              <td data-label="รายละเอียด" class="_tal-l">22 kg. 22 cm.</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div class="hah-header _mgbt-16px">
+          <h3>สอบถามอื่นๆ</h3>
+        </div>
+
+        <table class="bio-table _mgbt-64px">
+          <thead>
+            <tr>
+              <th scope="col" class="_w-256px">หัวข้อ</th>
+              <th scope="col">รายละเอียด</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td data-label="หัวข้อ" class="_tal-l">สาเหตุที่หาผู้ดูแล</td>
+              <td data-label="รายละเอียด" class="_tal-l">-</td>
+            </tr>
+            <tr>
+              <td data-label="หัวข้อ" class="_tal-l">รู้จัก Hah ได้อย่างไร</td>
+              <td data-label="รายละเอียด" class="_tal-l">Google</td>
+            </tr>
+          </tbody>
+        </table>
+        
         <!-- Medical Record -->
         <div class="hah-header _mgbt-16px">
-          <h3>Admin Note</h3>
+          <h3>Comment</h3>
         </div>
         <div class="bio-textarea _mgbt-16px">
           <textarea rows="5"></textarea>

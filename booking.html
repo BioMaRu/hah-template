@@ -21,13 +21,13 @@
           <div class="hah-dropdown-panel _t-64px _l-8px" style="min-width: 150px">
             <ul>
               <li onclick="window.location.href = 'booking.html'">
-                  Bookings
+                Bookings
               </li>
               <li onclick="window.location.href = 'patient.html'">
-                  Bookings
+                Patients
               </li>
               <li onclick="window.location.href = 'Caregiver.html'">
-                  Bookings
+                Caregivers
               </li>
             </ul>
           </div>
@@ -89,9 +89,11 @@
         
 
         <div class="_dp-f _jtfct-fe _mgbt-16px">
-          <div class="bio-button _w-128px">
-            <i class="fa fa-plus"></i> Booking
-          </div>
+          <a href="booking-edit.html">
+            <div class="bio-button _w-128px">
+              <i class="fa fa-plus"></i> Booking
+            </div>
+          </a>
         </div>
 
         <div class="_dp-f _alit-ct _fw-w _bgcl-primary-100 _mgbt-16px _pd-12px">
@@ -138,13 +140,18 @@
             </tr>
           </thead>
           <tbody>
-            <tr v-for="i in 8" onclick="window.location.href = 'patient-profile.html'">
+            <tr v-for="i in 6" onclick="window.location.href = 'booking-detail.html'">
               <td data-label="ID">{{ i }}</td>
               <td data-label="Date Add">12/10/2017, 21:05</td>
               <td data-label="Patient">สลาตัน อิบราฮิมโมวิช</td>
               <td data-label="Cotact">winsome losesome</td>
               <td data-label="Tel.">0812345678</td>
-              <td data-label="Status" class="status-positive">Active</td>
+              <td v-if="i === 1" data-label="Status" class="status-new">New</td>
+              <td v-if="i === 2" data-label="Status" class="status-pending">pending</td>
+              <td v-if="i === 3" data-label="Status" class="status-matching">matching</td>
+              <td v-if="i === 4" data-label="Status" class="status-response">response</td>
+              <td v-if="i === 5" data-label="Status" class="status-drop-off">drop-off</td>
+              <td v-if="i === 6" data-label="Status" class="status-deal">deal</td>
               <td data-label="Admin" onclick="event.stopPropagation()">
                 <a class="hah-dropdown" href="#">
                   <img

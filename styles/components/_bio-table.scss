@@ -17,6 +17,7 @@ table.bio-table tbody tr:hover {
 
 table.bio-table th,
 table.bio-table td {
+  border: 1px solid #ddd;
   text-align: center;
   padding: 16px;
   position: relative;
@@ -121,6 +122,36 @@ table.bio-table {
 
   .status-primary {
     @extend ._bgcl-primary;
+  }
+
+  .status-new {
+    color: white;
+    background-color: #d7ac3d;
+  }
+
+  .status-pending {
+    color: white;
+    background-color: #0f70b6;
+  }
+
+  .status-matching {
+    color: white;
+    background-color: #1c5889;
+  }
+
+  .status-response {
+    color: white;
+    background-color: #213f5c;
+  }
+
+  .status-drop-off {
+    color: white;
+    background-color: #bdbbbc;
+  }
+
+  .status-deal {
+    color: white;
+    background-color: #00944c;
   }
 
 }
