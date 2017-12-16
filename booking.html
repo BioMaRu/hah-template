@@ -97,7 +97,7 @@
         </div>
 
         <div class="_dp-f _alit-ct _fw-w _bgcl-primary-100 _mgbt-16px _pd-12px">
-          <strong>Status:</strong>
+          <strong class="_mgr-16px">Status:</strong>
           <div class="bio-checkbox _mgh-16px _mgv-8px">
             <input type="checkbox" id="checkbox1">
             <label for="checkbox1">New</label>
@@ -152,7 +152,7 @@
               <td v-if="i === 4" data-label="Status" class="status-response">response</td>
               <td v-if="i === 5" data-label="Status" class="status-drop-off">drop-off</td>
               <td v-if="i === 6" data-label="Status" class="status-deal">deal</td>
-              <td data-label="Admin" onclick="event.stopPropagation()">
+              <td data-label="Admin" onclick="event.stopPropagation(); event.preventDefault();">
                 <a class="hah-dropdown" href="#">
                   <img
                     src="http://www.newsshare.in/wp-content/uploads/2017/04/Miniclip-8-Ball-Pool-Avatar-16-180x180.png" alt="avatar"
